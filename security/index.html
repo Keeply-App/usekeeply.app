@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Security Policy — Keeply</title>
+    <link rel="stylesheet" href="../_shared.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a href="https://usekeeply.app">
+          <img src="../logo.png" width="32" height="32" />
+          <span class="brand">Keeply</span>
+        </a>
+      </header>
+
+      <h1>Security Incident Response Policy</h1>
+      <p class="meta">Effective date: April 19, 2026</p>
+      <p class="intro">
+        This document describes how Keeply responds to security incidents that
+        may involve merchant or customer data.
+      </p>
+
+      <h2>1. Scope</h2>
+      <p>
+        This policy applies to any event that compromises or may compromise the
+        confidentiality, integrity, or availability of Protected Customer Data
+        stored or processed by Keeply — including customer names, email
+        addresses, and order history.
+      </p>
+
+      <h2>2. Identify</h2>
+      <p>We detect incidents through:</p>
+      <ul>
+        <li>
+          <strong>Automated alerts:</strong> Fly.io infrastructure alerts for
+          unusual access patterns or service failures
+        </li>
+        <li>
+          <strong>Structured access logs:</strong> Every read/write of customer
+          or order data is logged; anomalies are reviewable at any time
+        </li>
+        <li>
+          <strong>Merchant reports:</strong> Direct notification via email
+        </li>
+        <li>
+          <strong>Shopify notifications:</strong> Alerts from Shopify's Partner
+          Dashboard
+        </li>
+      </ul>
+
+      <h2>3. Contain</h2>
+      <p>Upon detecting a confirmed or suspected incident:</p>
+      <ul>
+        <li>
+          Immediately revoke any compromised API keys, access tokens, or
+          credentials
+        </li>
+        <li>
+          Take the affected service offline if necessary to prevent further
+          exposure
+        </li>
+        <li>Preserve logs for investigation (do not delete)</li>
+        <li>
+          Assess the scope: which shops and customers are affected, what data
+          was exposed
+        </li>
+      </ul>
+
+      <h2>4. Notify</h2>
+      <ul>
+        <li>
+          <strong>Affected merchants</strong> will be notified
+          <strong>within 72 hours</strong> of a confirmed breach, via the email
+          address on their Shopify account
+        </li>
+        <li>
+          Notification will include: what happened, what data was involved, what
+          we have done, and what merchants should do
+        </li>
+        <li>
+          <strong>Shopify</strong> will be notified via the Partner Dashboard
+          incident reporting channel
+        </li>
+        <li>
+          If required by applicable law (GDPR, etc.), relevant data protection
+          authorities will be notified
+        </li>
+      </ul>
+
+      <h2>5. Post-Mortem</h2>
+      <p>Within 7 days of resolution:</p>
+      <ul>
+        <li>Document the root cause</li>
+        <li>
+          Document the timeline of detection, containment, and notification
+        </li>
+        <li>Implement preventive measures to avoid recurrence</li>
+        <li>Update this policy if needed</li>
+      </ul>
+
+      <h2>6. Contact</h2>
+      <p>
+        To report a security issue:
+        <a href="mailto:support@usekeeply.app">support@usekeeply.app</a>
+      </p>
+      <p>Response time: within 24 hours.</p>
+
+      <hr />
+      <footer>
+        © 2026 Keeply · <a href="/privacy">Privacy Policy</a> ·
+        <a href="/terms">Terms of Service</a> · <a href="/security">Security</a>
+      </footer>
+    </div>
+  </body>
+</html>
