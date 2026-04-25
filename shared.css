@@ -67,6 +67,33 @@ li {
 a {
   color: #e85d2f;
 }
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 13px;
+  background: #efefed;
+  color: #1a1a1a;
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+th {
+  text-align: left;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 8px 12px 8px 0;
+}
+td {
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 8px 12px 8px 0;
+  vertical-align: top;
+}
 hr {
   border: none;
   border-top: 1px solid #e5e5e5;
@@ -75,4 +102,41 @@ hr {
 footer {
   color: #6b6b6b;
   font-size: 13px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111111;
+    color: #e8e8e8;
+  }
+  .meta {
+    color: #888888;
+  }
+  .intro {
+    color: #bbbbbb;
+  }
+  p {
+    color: #cccccc;
+  }
+  li {
+    color: #cccccc;
+  }
+  code {
+    background: #222222;
+    color: #e8e8e8;
+  }
+  th {
+    color: #e8e8e8;
+    border-bottom-color: #2e2e2e;
+  }
+  td {
+    color: #cccccc;
+    border-bottom-color: #2e2e2e;
+  }
+  hr {
+    border-top-color: #2e2e2e;
+  }
+  footer {
+    color: #888888;
+  }
 }
