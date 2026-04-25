@@ -4,170 +4,107 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy — Keeply</title>
+    <link rel="icon" href="../logo.png" type="image/png" />
     <link rel="stylesheet" href="../shared.css" />
-    <link rel="icon" type="image/png" href="../logo.png" />
+    <link rel="stylesheet" href="../legal.css" />
   </head>
   <body>
+    <div class="blob-field">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <nav>
+      <a href="https://usekeeply.app" class="nav-logo">
+        <img src="../logo.png" width="32" height="32" alt="Keeply" />
+        <span>Keeply</span>
+      </a>
+      <a
+        href="https://apps.shopify.com/keeply"
+        class="nav-cta"
+        target="_blank"
+        rel="noopener"
+        >Add to Shopify →</a
+      >
+    </nav>
     <div class="page">
-      <header>
-        <a href="https://usekeeply.app">
-          <img src="../logo.png" width="32" height="32" />
-          <span class="brand">Keeply</span>
-        </a>
-      </header>
-
       <h1>Privacy Policy</h1>
       <p class="meta">Effective date: April 25, 2026</p>
       <p class="intro">
-        Keeply ("we", "us", "our") is a Shopify embedded app that predicts
-        customer churn based on individual purchase rhythm. This Privacy Policy
-        explains what data we collect, how we use it, and your rights as a
-        merchant.
+        Keeply is a Shopify embedded app that predicts customer churn based on
+        individual purchase rhythm. This Privacy Policy explains what data we
+        collect and how we use it.
       </p>
-
-      <h2>1. Data We Collect</h2>
+      <h2>Data We Collect</h2>
       <p>
         When you install Keeply, we copy the following data from your Shopify
-        store into our own database. This local copy powers our analysis — we do
-        not query Shopify in real time when you open your dashboard.
+        store. We do not query Shopify in real time when you open your
+        dashboard.
       </p>
-      <p><strong>Your customers' data:</strong></p>
+      <p><strong>Customers:</strong></p>
       <ul>
         <li>First name, last name, email address, account creation date</li>
         <li>
-          Order history: order ID, date, total price, currency, financial
-          status, cancellation date
+          Order history: ID, date, total price, currency, financial status
         </li>
-        <li>Product metadata from orders: product title, type, and vendor</li>
-      </ul>
-      <p><strong>Your store data:</strong></p>
-      <ul>
-        <li>Shop domain, currency, timezone, store name, installation date</li>
-      </ul>
-      <p><strong>Your account data (from the OAuth install flow):</strong></p>
-      <ul>
-        <li>
-          Shopify user ID, name, and email address of the staff member who
-          installed the app
-        </li>
+        <li>Product metadata: title, type, vendor</li>
       </ul>
       <p>
-        We do <strong>not</strong> collect payment card information, addresses,
-        phone numbers, passwords, or data beyond what is listed above.
+        <strong>Store:</strong> domain, currency, timezone, name, installation
+        date.
       </p>
-
-      <h2>2. How We Use Your Data</h2>
-      <p>We use collected data exclusively to provide the Keeply service:</p>
+      <p>
+        We do <strong>not</strong> collect payment cards, addresses, phone
+        numbers, or passwords.
+      </p>
+      <h2>How We Use Your Data</h2>
       <ul>
-        <li>
-          Compute each customer's Average Days Between Orders (ADBO) — their
-          individual purchase rhythm
-        </li>
-        <li>
-          Classify customers as New, Active, At Risk, or Lost based on their
-          rhythm and your store's median ADBO
-        </li>
+        <li>Compute each customer's ADBO — their individual purchase rhythm</li>
+        <li>Classify customers as New, Active, At Risk, or Lost</li>
         <li>Calculate Revenue at Risk for your dashboard</li>
-        <li>
-          Display customer segments and details inside your Shopify Admin
-        </li>
-        <li>
-          Send you a weekly email digest summarizing retention health, segment
-          shifts, and top at-risk customers (only if you opt in)
-        </li>
+        <li>Send a weekly email digest (only if you opt in)</li>
       </ul>
       <p>
-        We do <strong>not</strong> sell your data, share it for advertising, or
-        use it for any purpose other than delivering Keeply.
+        We do <strong>not</strong> sell your data or use it for advertising.
       </p>
-
-      <h2>3. Data Storage</h2>
+      <h2>Data Storage</h2>
       <p>
-        All data is stored in a PostgreSQL database hosted on Fly.io (US East —
-        Virginia). Access is restricted to the Keeply application only. Data is
-        encrypted in transit (TLS 1.2+) and at rest.
+        PostgreSQL on Fly.io (US East — Virginia). Encrypted in transit (TLS
+        1.2+) and at rest.
       </p>
-
-      <h2>4. Weekly Digest Email</h2>
+      <h2>Weekly Digest Email</h2>
       <p>
-        If you enable the weekly digest, Keeply sends a summary email to the
-        address you configure in Settings (or the store owner email by default).
-        This email is delivered via <strong>Resend</strong> (resend.com) and
-        includes:
+        Delivered via <strong>Resend</strong> (resend.com). Disable anytime from
+        Settings.
       </p>
-      <ul>
-        <li>Your store's retention health score and segment counts</li>
-        <li>Week-over-week status transitions</li>
-        <li>
-          Top at-risk customers (name, email, revenue at risk, days since last
-          order)
-        </li>
-      </ul>
-      <p>
-        Customer names and emails are transmitted to Resend solely for rendering
-        and delivering this email. You can disable the weekly digest at any time
-        from Keeply's Settings page.
-      </p>
-
-      <h2>5. Data Retention &amp; Deletion</h2>
-      <p>
-        We retain your data for as long as Keeply is installed on your store.
-      </p>
-      <p>When you uninstall:</p>
+      <h2>Data Retention &amp; Deletion</h2>
       <ul>
         <li>
-          <strong>App sessions</strong> are cleared immediately upon receiving
-          the <code>app/uninstalled</code> event
+          <strong>Sessions</strong> cleared immediately on
+          <code>app/uninstalled</code>
         </li>
         <li>
-          <strong>All customer, order, and store data</strong> is permanently
-          and irreversibly deleted within 48 hours upon receiving Shopify's
-          <code>shop/redact</code> webhook
+          <strong>All data</strong> permanently deleted within 48 hours on
+          <code>shop/redact</code>
         </li>
       </ul>
       <p>
-        You may also contact us at
-        <a href="mailto:support@usekeeply.app">support@usekeeply.app</a> to
-        request early deletion of your data.
+        Contact
+        <a href="mailto:support@usekeeply.app">support@usekeeply.app</a> for
+        early deletion.
       </p>
-
-      <h2>6. Customer Data Requests (GDPR / CCPA)</h2>
-      <p>
-        If one of your customers submits a data access or deletion request via
-        Shopify, Shopify forwards it to Keeply automatically:
-      </p>
+      <h2>Customer Data Requests</h2>
       <ul>
         <li>
-          <strong>Deletion requests</strong> (<code>customers/redact</code>):
-          the customer's personal data (name, email, account details) is deleted
-          immediately upon receiving the request from Shopify. Order records are
-          retained without customer attribution for merchant accounting purposes.
+          <strong>Deletion (<code>customers/redact</code>):</strong> personal
+          data deleted immediately
         </li>
         <li>
-          <strong>Data access requests</strong>
-          (<code>customers/data_request</code>): we log the request and deliver
-          the export within 30 days. Contact
-          <a href="mailto:support@usekeeply.app">support@usekeeply.app</a> if
-          you have not received a response.
+          <strong>Access (<code>customers/data_request</code>):</strong> export
+          delivered within 30 days
         </li>
       </ul>
-
-      <h2>7. Error Tracking</h2>
-      <p>
-        We use <strong>Sentry</strong> (sentry.io) to capture application errors
-        and performance data. Error reports may include the shop domain, staff
-        session context, and internal operation metadata. We do not intentionally
-        send end-customer personal data to Sentry.
-      </p>
-
-      <h2>8. Access Logging</h2>
-      <p>
-        Every read and write of customer or order data is logged with a
-        timestamp, shop identifier, and operation type. These logs are retained
-        for 30 days and are used solely for auditing and incident response.
-      </p>
-
-      <h2>9. Third-Party Services</h2>
+      <h2>Third-Party Services</h2>
       <table>
         <thead>
           <tr>
@@ -194,26 +131,22 @@
           </tr>
         </tbody>
       </table>
-
-      <h2>10. Changes to This Policy</h2>
-      <p>
-        We may update this policy as the service evolves. The effective date at
-        the top reflects the latest revision. Material changes will be
-        communicated via the Shopify Partner email on file.
-      </p>
-
-      <h2>11. Contact</h2>
-      <p>
-        <a href="mailto:support@usekeeply.app">support@usekeeply.app</a>
-      </p>
-
-      <hr />
-      <footer>
-        © 2026 Keeply · <a href="/privacy">Privacy Policy</a> ·
-        <a href="/terms">Terms of Service</a> ·
-        <a href="/security">Security</a> ·
-        <a href="/how-it-works">How it works</a>
-      </footer>
+      <h2>Contact</h2>
+      <p><a href="mailto:support@usekeeply.app">support@usekeeply.app</a></p>
     </div>
+    <footer class="site-footer">
+      <div class="footer-logo">
+        <img src="../logo.png" width="24" height="24" alt="Keeply" />
+        <span>Keeply</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/security">Security</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="mailto:support@usekeeply.app">Support</a>
+      </div>
+      <div class="footer-copy">© 2026 Keeply</div>
+    </footer>
   </body>
 </html>

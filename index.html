@@ -1,5 +1,414 @@
 <!doctype html>
 <html lang="en">
-  <meta charset="utf-8" />
-  <meta http-equiv="refresh" content="0; url=https://app.usekeeply.app" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keeply — Know who's leaving before they do</title>
+    <meta
+      name="description"
+      content="Keeply tracks each customer's unique purchase rhythm and alerts you the moment it breaks. Know who's at risk before revenue slips away."
+    />
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+  <body>
+    <div class="blob-field">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+      <a href="/" class="nav-logo">
+        <img src="logo.png" width="32" height="32" alt="Keeply" />
+        <span>Keeply</span>
+      </a>
+      <a
+        href="https://apps.shopify.com/keeply"
+        class="nav-cta"
+        target="_blank"
+        rel="noopener"
+      >
+        Add to Shopify →
+      </a>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-badge">Shopify App</div>
+        <h1>Know who's leaving<br /><em>before they do.</em></h1>
+        <p class="hero-sub">
+          Keeply tracks each customer's unique purchase rhythm. When the rhythm
+          breaks, you know about it — with the exact revenue at stake.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://apps.shopify.com/keeply"
+            class="btn-primary"
+            target="_blank"
+            rel="noopener"
+          >
+            Start free trial →
+          </a>
+          <a href="/how-it-works" class="btn-secondary">How it works</a>
+        </div>
+        <p class="hero-note">
+          14-day free trial · $29/month · No credit card required
+        </p>
+        <br /><br />
+        <div class="stat-strip">
+          <div class="stat">
+            <div class="stat-val">ADBO</div>
+            <div class="stat-label">Per-customer rhythm</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">4</div>
+            <div class="stat-label">Smart segments</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">$0</div>
+            <div class="stat-label">Hidden fees</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="how">
+        <div class="section-wrap">
+          <div class="reveal">
+            <p class="section-eyebrow">The idea</p>
+            <h2 class="section-title">
+              Every customer shops<br />at their own <em>pace.</em>
+            </h2>
+            <p class="section-body">
+              A coffee buyer orders every 10 days. A furniture buyer orders once
+              a year. Both are healthy — until they stop. Keeply measures each
+              customer individually and flags the moment their pattern breaks.
+            </p>
+          </div>
+          <div class="how-grid">
+            <div class="steps reveal reveal-delay-1">
+              <div class="step">
+                <div class="step-num">1</div>
+                <div>
+                  <div class="step-title">Import your order history</div>
+                  <div class="step-body">
+                    Keeply syncs all your orders from Shopify in one click. No
+                    CSV exports, no setup required.
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">2</div>
+                <div>
+                  <div class="step-title">
+                    We calculate each customer's ADBO
+                  </div>
+                  <div class="step-body">
+                    Average Days Between Orders — measured individually, not as
+                    a store average. Someone who buys monthly has a different
+                    rhythm than someone who buys quarterly.
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">3</div>
+                <div>
+                  <div class="step-title">Rhythm breaks → you're alerted</div>
+                  <div class="step-body">
+                    When a customer goes quiet beyond their own pattern, they
+                    move to At Risk. You see exactly how many days overdue they
+                    are — and how much revenue is at stake.
+                  </div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num">4</div>
+                <div>
+                  <div class="step-title">Act before they're gone</div>
+                  <div class="step-body">
+                    Export At Risk customers to CSV, open them in Shopify, or
+                    wait for the weekly digest every Monday morning.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="how-visual reveal reveal-delay-2">
+              <div class="metric-card">
+                <div class="metric-label">Revenue at Risk</div>
+                <div class="metric-val">$3,154</div>
+                <div class="metric-sub">across 35 at-risk customers</div>
+              </div>
+              <div class="seg-row">
+                <div class="seg-item">
+                  <div class="seg-item-val">92</div>
+                  <div class="seg-item-label">New</div>
+                </div>
+                <div class="seg-item">
+                  <div class="seg-item-val">49</div>
+                  <div class="seg-item-label">Active</div>
+                </div>
+                <div class="seg-item risk">
+                  <div class="seg-item-val">35</div>
+                  <div class="seg-item-label">At Risk</div>
+                </div>
+                <div class="seg-item">
+                  <div class="seg-item-val">24</div>
+                  <div class="seg-item-label">Lost</div>
+                </div>
+              </div>
+              <div class="customer-rows">
+                <div class="customer-row">
+                  <div>
+                    <div class="c-name">Madaline Metz-Brown</div>
+                    <div class="c-days">190 days ago</div>
+                  </div>
+                  <div class="c-amt">$391.51</div>
+                </div>
+                <div class="customer-row">
+                  <div>
+                    <div class="c-name">Gladys Lueilwitz</div>
+                    <div class="c-days">150 days ago</div>
+                  </div>
+                  <div class="c-amt">$382.97</div>
+                </div>
+                <div class="customer-row">
+                  <div>
+                    <div class="c-name">Adrianna Schimmel</div>
+                    <div class="c-days">159 days ago</div>
+                  </div>
+                  <div class="c-amt">$221.23</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="features">
+        <div class="section-wrap">
+          <div class="reveal">
+            <p class="section-eyebrow">What you get</p>
+            <h2 class="section-title">
+              Everything you need.<br /><em>Nothing you don't.</em>
+            </h2>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card large reveal reveal-delay-1">
+              <div>
+                <div class="feature-icon">◎</div>
+                <h3 class="feature-title">Purchase rhythm — visualized</h3>
+                <p class="feature-body">
+                  See 18 months of purchase activity at a glance. Each block is
+                  a month. When the blocks go dark, someone's rhythm has broken.
+                </p>
+              </div>
+              <div class="rhythm-demo">
+                <div class="rhythm-bar">
+                  <div class="rb"></div>
+                  <div class="rb"></div>
+                  <div class="rb e"></div>
+                  <div class="rb"></div>
+                  <div class="rb e"></div>
+                  <div class="rb e"></div>
+                  <div class="rb e"></div>
+                  <div class="rb e"></div>
+                  <div class="rb e"></div>
+                </div>
+                <p class="rhythm-label">
+                  Usually every 86 days · 190 days since last order
+                </p>
+                <br />
+                <div
+                  style="
+                    background: rgba(232, 93, 47, 0.06);
+                    border: 1px solid rgba(232, 93, 47, 0.15);
+                    border-radius: 10px;
+                    padding: 14px 16px;
+                    margin-top: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 11px;
+                      color: var(--coral);
+                      font-weight: 600;
+                      text-transform: uppercase;
+                      letter-spacing: 1.5px;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    At Risk
+                  </div>
+                  <div
+                    style="
+                      font-size: 22px;
+                      font-weight: 800;
+                      color: #fff;
+                      letter-spacing: -0.5px;
+                    "
+                  >
+                    104 days overdue
+                  </div>
+                  <div style="font-size: 12px; color: #555; margin-top: 2px">
+                    ADBO: 86 days · Revenue at risk: $391.51
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="feature-card reveal reveal-delay-2">
+              <div class="feature-icon">⟳</div>
+              <h3 class="feature-title">Weekly digest</h3>
+              <p class="feature-body">
+                Every Monday morning — a summary of your retention health, who
+                moved to At Risk, who came back, and who needs attention this
+                week.
+              </p>
+            </div>
+            <div class="feature-card reveal reveal-delay-1">
+              <div class="feature-icon">⊞</div>
+              <h3 class="feature-title">Product groups</h3>
+              <p class="feature-body">
+                A coffee buyer and an equipment buyer have different rhythms.
+                Groups let each category track churn on its own terms.
+              </p>
+            </div>
+            <div class="feature-card reveal reveal-delay-2">
+              <div class="feature-icon">↗</div>
+              <h3 class="feature-title">CSV export</h3>
+              <p class="feature-body">
+                Take your At Risk list into Klaviyo, Mailchimp, or any tool you
+                already use. One click, right columns, ready to send.
+              </p>
+            </div>
+            <div class="feature-card reveal reveal-delay-3">
+              <div class="feature-icon">◈</div>
+              <h3 class="feature-title">Native Shopify UI</h3>
+              <p class="feature-body">
+                Keeply lives inside your Shopify Admin. No new tab, no separate
+                login, no learning curve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENTS -->
+      <section class="segments">
+        <div class="section-wrap">
+          <div class="reveal">
+            <p class="section-eyebrow">Customer segments</p>
+            <h2 class="section-title">
+              Four states.<br /><em>One clear picture.</em>
+            </h2>
+            <p class="section-body">
+              Every customer is always in one of four states. The goal is
+              keeping as many people as possible in Active — and catching At
+              Risk before they become Lost.
+            </p>
+          </div>
+          <div class="segments-grid" style="margin-top: 64px">
+            <div class="seg-card new-card reveal reveal-delay-1">
+              <div class="seg-dot indigo"></div>
+              <h3 class="seg-card-title">New</h3>
+              <p class="seg-card-body">
+                Still early in their journey. No established rhythm yet — but
+                this is the most critical window. The gap between first and
+                second purchase determines whether someone becomes loyal or
+                disappears.
+              </p>
+            </div>
+            <div class="seg-card active-card reveal reveal-delay-2">
+              <div class="seg-dot green"></div>
+              <h3 class="seg-card-title">Active</h3>
+              <p class="seg-card-body">
+                Buying within their normal rhythm. No action needed. Keeply
+                watches quietly so you can focus on the customers who do need
+                attention.
+              </p>
+            </div>
+            <div class="seg-card risk-card reveal reveal-delay-1">
+              <div class="seg-dot coral"></div>
+              <h3 class="seg-card-title">At Risk</h3>
+              <p class="seg-card-body">
+                Their rhythm has broken. They haven't left yet — but the window
+                to bring them back is closing. This is the most actionable
+                segment. The sooner you act, the higher the chance of recovery.
+              </p>
+            </div>
+            <div class="seg-card lost-card reveal reveal-delay-2">
+              <div class="seg-dot gray"></div>
+              <h3 class="seg-card-title">Lost</h3>
+              <p class="seg-card-body">
+                Silent for a long time beyond their personal rhythm. Recovery is
+                unlikely but not impossible. Worth a long-shot attempt before
+                writing them off.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="cta-divider"></div>
+        <div class="cta-inner reveal">
+          <h2>
+            Stop losing customers<br /><em>you don't know you're losing.</em>
+          </h2>
+          <p>14-day free trial. No card required. Takes 2 minutes to set up.</p>
+          <a
+            href="https://apps.shopify.com/keeply"
+            class="btn-primary"
+            target="_blank"
+            rel="noopener"
+            style="display: inline-flex"
+          >
+            Add to Shopify — it's free to start →
+          </a>
+          <p class="cta-fine">
+            $29/month after trial · Cancel anytime from Shopify Admin · Billed
+            through Shopify
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-logo">
+        <img src="logo.png" width="24" height="24" alt="Keeply" />
+        <span>Keeply</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/security">Security</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="mailto:support@usekeeply.app">Support</a>
+      </div>
+      <div class="footer-copy">© 2026 Keeply</div>
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              observer.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+    </script>
+  </body>
 </html>

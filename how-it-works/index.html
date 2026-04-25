@@ -4,136 +4,115 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>How it works — Keeply</title>
+    <link rel="icon" href="../logo.png" type="image/png" />
     <link rel="stylesheet" href="../shared.css" />
-    <link rel="icon" type="image/png" href="../logo.png" />
+    <link rel="stylesheet" href="../legal.css" />
   </head>
   <body>
+    <div class="blob-field">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <nav>
+      <a href="https://usekeeply.app" class="nav-logo">
+        <img src="../logo.png" width="32" height="32" alt="Keeply" />
+        <span>Keeply</span>
+      </a>
+      <a
+        href="https://apps.shopify.com/keeply"
+        class="nav-cta"
+        target="_blank"
+        rel="noopener"
+        >Add to Shopify →</a
+      >
+    </nav>
     <div class="page">
-      <header>
-        <a href="https://usekeeply.app">
-          <img src="../logo.png" width="32" height="32" />
-          <span class="brand">Keeply</span>
-        </a>
-      </header>
-
       <h1>How it works</h1>
       <p class="intro">
         This page explains how Keeply classifies your customers, what each
         metric means, and how product groups work.
       </p>
-
       <h2>Customer statuses</h2>
       <ul>
         <li>
-          <strong>New —</strong> A customer who is still early in their journey
-          with your store. They haven't purchased enough times yet for Keeply to
-          know their personal rhythm. New customers are the most important
-          segment to act on early — the gap between a first and second purchase
-          often determines whether someone becomes loyal or disappears for good.
+          <strong>New —</strong> Still early in their journey. Not enough
+          history for an individual rhythm yet. The gap between first and second
+          purchase often determines whether someone becomes loyal or disappears.
         </li>
         <li>
-          <strong>Active —</strong> A customer who is buying within their normal
-          rhythm. No action needed — they're healthy.
+          <strong>Active —</strong> Buying within their normal rhythm. No action
+          needed.
         </li>
         <li>
-          <strong>At Risk —</strong> A customer whose rhythm has gone quiet.
-          They haven't left yet, but the window to bring them back is closing.
-          This is the most actionable segment — the sooner you reach out, the
-          better the chance of recovery.
+          <strong>At Risk —</strong> Rhythm has gone quiet. They haven't left
+          yet — but the window is closing. The most actionable segment.
         </li>
         <li>
-          <strong>Lost —</strong> A customer who has been silent for a long time
-          beyond their personal rhythm. Recovery is still possible, but
-          statistically unlikely. Worth a long-shot win-back attempt.
+          <strong>Lost —</strong> Silent far beyond their personal rhythm.
+          Recovery is unlikely but worth a long-shot attempt.
         </li>
       </ul>
       <p>
         Thresholds are calibrated for typical e-commerce patterns and can be
         adjusted in Settings.
       </p>
-
       <h2>New customer engagement</h2>
-      <p>
-        Because new customers haven't established their own rhythm yet, Keeply
-        uses your store's typical repeat-purchase pattern to gauge how they're
-        doing.
-      </p>
       <ul>
         <li>
-          <strong>Warming up —</strong> Still within the normal return window
-          for your store. No action needed yet.
+          <strong>Warming up —</strong> Still within your store's typical return
+          window. No action needed.
         </li>
         <li>
-          <strong>Needs a nudge —</strong> They've gone past your store's
-          typical return window. A well-timed message — a thank-you, a product
-          tip, a gentle reminder — can make the difference between a one-time
-          buyer and a loyal customer.
+          <strong>Needs a nudge —</strong> Gone past your store's typical
+          window. A well-timed message can make the difference.
         </li>
         <li>
-          <strong>Slipping away —</strong> They've been silent for a while
-          beyond your store's typical window. A long shot, but still worth a
-          win-back attempt before they're gone for good.
+          <strong>Slipping away —</strong> Silent for a while beyond the typical
+          window. Worth a win-back attempt.
         </li>
       </ul>
-
       <h2>Key metrics</h2>
       <ul>
         <li>
-          <strong>ADBO — Average Days Between Orders.</strong> Each customer has
-          their own purchase rhythm. ADBO captures that rhythm individually —
-          not as a store-wide average. Someone who buys coffee every week and
-          someone who buys furniture once a year can both be perfectly healthy
-          customers. Keeply needs enough order history to compute a reliable
-          rhythm.
+          <strong>ADBO — Average Days Between Orders.</strong> Each customer's
+          rhythm measured individually — not as a store average.
         </li>
         <li>
-          <strong>Revenue at Risk.</strong> The revenue you stand to lose if an
-          At Risk customer doesn't come back. Calculated from their recent order
-          history using a method that resists outliers — so one unusually large
-          purchase doesn't overstate the real risk. The headline number on your
-          dashboard is the total across all At Risk customers.
+          <strong>Revenue at Risk.</strong> What you stand to lose if an At Risk
+          customer doesn't come back. The headline number is the total across
+          all At Risk customers.
         </li>
         <li>
-          <strong>Days overdue.</strong> How many days a customer has gone
-          beyond their personal rhythm. The higher this number relative to their
-          normal pattern, the harder the recovery tends to be.
+          <strong>Days overdue.</strong> How many days beyond their personal
+          rhythm. The higher this number, the harder recovery tends to be.
         </li>
         <li>
-          <strong>Store ADBO.</strong> The typical repeat-purchase rhythm across
-          your returning customers as a whole. Used as a reference point for new
-          customers who haven't established their own pattern yet. A coffee shop
-          and a furniture shop will have very different store ADBOs — Keeply
-          adapts automatically.
+          <strong>Store ADBO.</strong> The typical rhythm across your returning
+          customers — used as a reference point for new customers.
         </li>
       </ul>
-
       <h2>Product Groups</h2>
       <p>
         An order belongs to a group if any of its line items carries a matching
-        product tag. A customer appears in every group where they have
-        qualifying orders — with group-specific rhythm and revenue metrics
-        calculated separately for each.
+        product tag. The <strong>General</strong> group includes all orders and
+        cannot be deleted. Custom groups are useful when your store spans
+        categories with very different purchase rhythms.
       </p>
-      <p>
-        The <strong>General</strong> group includes all orders and cannot be
-        deleted. It's the default view and works well for stores that sell one
-        type of product.
-      </p>
-      <p>
-        Custom groups are useful when your store spans categories with very
-        different natural purchase rhythms. Without groups, those patterns blend
-        together and the signals become less precise. With groups, each category
-        gets its own rhythm and its own churn indicators.
-      </p>
-      <p>You can create and manage groups in the Groups page.</p>
-
-      <hr />
-      <footer>
-        © 2026 Keeply · <a href="/privacy">Privacy Policy</a> ·
-        <a href="/terms">Terms of Service</a> ·
-        <a href="/security">Security</a> ·
-        <a href="/how-it-works">How it works</a>
-      </footer>
     </div>
+    <footer class="site-footer">
+      <div class="footer-logo">
+        <img src="../logo.png" width="24" height="24" alt="Keeply" />
+        <span>Keeply</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/security">Security</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="mailto:support@usekeeply.app">Support</a>
+      </div>
+      <div class="footer-copy">© 2026 Keeply</div>
+    </footer>
   </body>
 </html>

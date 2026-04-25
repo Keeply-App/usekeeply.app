@@ -4,121 +4,98 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Security Policy — Keeply</title>
+    <link rel="icon" href="../logo.png" type="image/png" />
     <link rel="stylesheet" href="../shared.css" />
-    <link rel="icon" type="image/png" href="../logo.png" />
+    <link rel="stylesheet" href="../legal.css" />
   </head>
   <body>
+    <div class="blob-field">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <nav>
+      <a href="https://usekeeply.app" class="nav-logo">
+        <img src="../logo.png" width="32" height="32" alt="Keeply" />
+        <span>Keeply</span>
+      </a>
+      <a
+        href="https://apps.shopify.com/keeply"
+        class="nav-cta"
+        target="_blank"
+        rel="noopener"
+        >Add to Shopify →</a
+      >
+    </nav>
     <div class="page">
-      <header>
-        <a href="https://usekeeply.app">
-          <img src="../logo.png" width="32" height="32" />
-          <span class="brand">Keeply</span>
-        </a>
-      </header>
-
-      <h1>Security Incident Response Policy</h1>
+      <h1>Security Incident Response</h1>
       <p class="meta">Effective date: April 25, 2026</p>
       <p class="intro">
         This document describes how Keeply responds to security incidents that
         may involve merchant or customer data.
       </p>
-
-      <h2>1. Scope</h2>
+      <h2>Scope</h2>
       <p>
-        This policy applies to any event that compromises or may compromise the
-        confidentiality, integrity, or availability of Protected Customer Data
-        stored or processed by Keeply — including customer names, email
-        addresses, order history, and merchant account data.
+        This policy applies to any event that may compromise the
+        confidentiality, integrity, or availability of Protected Customer Data —
+        customer names, emails, order history, and merchant account data.
       </p>
-
-      <h2>2. Identify</h2>
-      <p>We detect incidents through:</p>
+      <h2>Detection</h2>
       <ul>
         <li>
-          <strong>Automated error tracking:</strong> Sentry monitors application
-          errors and anomalies in real time
+          <strong>Sentry:</strong> automated error tracking and anomaly
+          detection in real time
         </li>
         <li>
-          <strong>Structured access logs:</strong> Every read/write of customer
-          or order data is logged; anomalies are reviewable at any time
+          <strong>Access logs:</strong> every read/write of customer data is
+          logged
         </li>
         <li>
           <strong>Infrastructure alerts:</strong> Fly.io alerts for unusual
-          access patterns or service failures
+          access patterns
         </li>
         <li>
-          <strong>Merchant reports:</strong> Direct notification via email
-        </li>
-        <li>
-          <strong>Shopify notifications:</strong> Alerts from Shopify's Partner
-          Dashboard
+          <strong>Merchant reports:</strong> direct notification via email
         </li>
       </ul>
-
-      <h2>3. Contain</h2>
-      <p>Upon detecting a confirmed or suspected incident:</p>
+      <h2>Containment</h2>
+      <ul>
+        <li>Immediately revoke compromised API keys, tokens, or credentials</li>
+        <li>Take affected service offline if necessary</li>
+        <li>Preserve logs — do not delete</li>
+      </ul>
+      <h2>Notification</h2>
       <ul>
         <li>
-          Immediately revoke any compromised API keys, access tokens, or
-          credentials
+          <strong>Affected merchants</strong> notified within
+          <strong>72 hours</strong> of a confirmed breach
         </li>
         <li>
-          Take the affected service offline if necessary to prevent further
-          exposure
+          Notification includes: what happened, what data, what actions to take
         </li>
-        <li>Preserve logs for investigation (do not delete)</li>
-        <li>
-          Assess the scope: which shops and customers are affected, what data
-          was exposed
-        </li>
+        <li><strong>Shopify</strong> notified via Partner Dashboard</li>
       </ul>
-
-      <h2>4. Notify</h2>
-      <ul>
-        <li>
-          <strong>Affected merchants</strong> will be notified
-          <strong>within 72 hours</strong> of a confirmed breach, via the email
-          address on their Shopify account
-        </li>
-        <li>
-          Notification will include: what happened, what data was involved, what
-          we have done, and what merchants should do
-        </li>
-        <li>
-          <strong>Shopify</strong> will be notified via the Partner Dashboard
-          incident reporting channel
-        </li>
-        <li>
-          If required by applicable law (GDPR, etc.), relevant data protection
-          authorities will be notified
-        </li>
-      </ul>
-
-      <h2>5. Post-Mortem</h2>
-      <p>Within 7 days of resolution:</p>
-      <ul>
-        <li>Document the root cause</li>
-        <li>
-          Document the timeline of detection, containment, and notification
-        </li>
-        <li>Implement preventive measures to avoid recurrence</li>
-        <li>Update this policy if needed</li>
-      </ul>
-
-      <h2>6. Contact</h2>
+      <h2>Post-Mortem</h2>
       <p>
-        To report a security issue:
-        <a href="mailto:support@usekeeply.app">support@usekeeply.app</a>
+        Within 7 days: root cause documented, timeline recorded, preventive
+        measures implemented.
       </p>
-      <p>Response time: within 24 hours.</p>
-
-      <hr />
-      <footer>
-        © 2026 Keeply · <a href="/privacy">Privacy Policy</a> ·
-        <a href="/terms">Terms of Service</a> ·
-        <a href="/security">Security</a> ·
-        <a href="/how-it-works">How it works</a>
-      </footer>
+      <h2>Contact</h2>
+      <p><a href="mailto:support@usekeeply.app">support@usekeeply.app</a></p>
     </div>
+    <footer class="site-footer">
+      <div class="footer-logo">
+        <img src="../logo.png" width="24" height="24" alt="Keeply" />
+        <span>Keeply</span>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="/security">Security</a>
+        <a href="/how-it-works">How it works</a>
+        <a href="mailto:support@usekeeply.app">Support</a>
+      </div>
+      <div class="footer-copy">© 2026 Keeply</div>
+    </footer>
   </body>
 </html>
