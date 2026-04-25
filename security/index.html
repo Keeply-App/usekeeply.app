@@ -17,7 +17,7 @@
       </header>
 
       <h1>Security Incident Response Policy</h1>
-      <p class="meta">Effective date: April 19, 2026</p>
+      <p class="meta">Effective date: April 25, 2026</p>
       <p class="intro">
         This document describes how Keeply responds to security incidents that
         may involve merchant or customer data.
@@ -28,19 +28,23 @@
         This policy applies to any event that compromises or may compromise the
         confidentiality, integrity, or availability of Protected Customer Data
         stored or processed by Keeply — including customer names, email
-        addresses, and order history.
+        addresses, order history, and merchant account data.
       </p>
 
       <h2>2. Identify</h2>
       <p>We detect incidents through:</p>
       <ul>
         <li>
-          <strong>Automated alerts:</strong> Fly.io infrastructure alerts for
-          unusual access patterns or service failures
+          <strong>Automated error tracking:</strong> Sentry monitors application
+          errors and anomalies in real time
         </li>
         <li>
           <strong>Structured access logs:</strong> Every read/write of customer
           or order data is logged; anomalies are reviewable at any time
+        </li>
+        <li>
+          <strong>Infrastructure alerts:</strong> Fly.io alerts for unusual
+          access patterns or service failures
         </li>
         <li>
           <strong>Merchant reports:</strong> Direct notification via email
